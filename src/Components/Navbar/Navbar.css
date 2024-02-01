@@ -1,0 +1,57 @@
+/* Navbar.css */
+
+/* General styling for the navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 20px 80px;
+  }
+  
+  .nav-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 70px;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+  }
+  
+  .nav-contact {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: white;
+    color: #262626;
+  }
+  
+  .nav-contact:hover {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #262626;
+    color: white;
+  }
+  
+  /* Media query for screens with a width of 992px or more */
+  @media (max-width: 992px) {
+    .nav-menu li:not(:last-child) {
+      display: none; /* Hide all li elements except the last one (Contact) */
+    }
+    .nav{
+        margin: 20px 10px !important;
+
+    }
+    .nav-logo{
+        font-size: 30px;
+    }
+  }
+  
